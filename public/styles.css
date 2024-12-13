@@ -1,0 +1,111 @@
+#app {
+  max-width: 600px;
+  margin: 50px auto;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+
+input {
+  width: 100%;
+  padding: 15px;
+  font-size: 18px;
+  margin: 10px 0;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 15px 20px;
+  font-size: 18px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+
+#task-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+#task-list li {
+  font-size: 18px;
+  margin: 10px 0;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+#task-list li span.task-name {
+  font-weight: bold;
+  color: #333;
+  font-size: 20px;
+}
+
+
+#task-list li span.task-desc {
+  font-size: 16px;
+  color: #777;
+  font-style: italic;
+  margin-left: 10px;
+  flex-grow: 1;
+
+  .material-icons.delete {
+    cursor: pointer;
+    color: #d9534f;
+    font-size: 24px;
+    margin-left: 10px;
+  }
+
+  .material-icons.delete:hover {
+    color: #c9302c;
+  }
+
+
+  .material-icons.update {
+    cursor: pointer;
+    color: #28a745;
+    font-size: 24px;
+    margin-left: 10px;
+  }
+
+  .material-icons.update:hover {
+    color: #218838;
+  }
+
+
+  #update-task {
+    padding: 15px 20px;
+    font-size: 18px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+
+  #update-task:hover {
+    background-color: #218838;
+  }
+
+  #update-task:active {
+    transform: scale(0.98);
+  }

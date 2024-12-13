@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+<body>
+  <div id="app">
+    <h1>To-do List</h1>
+    <form id="task-form">
+      <input type="text" id="task-name" placeholder="Task Name" required />
+      <input type="text" id="task-desc" placeholder="Task Description" required />
+      <button type="submit">Add Task</button>
+    </form>
+
+    <div id="edit-form" style="display: none;">
+      <h2>Edit Task</h2>
+      <input type="text" id="edit-name" placeholder="Task Name" required />
+      <input type="text" id="edit-desc" placeholder="Task Description" required />
+      <button id="update-task">Update Task</button>
+    </div>
+
+    <ul id="task-list"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
